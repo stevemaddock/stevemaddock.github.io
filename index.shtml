@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This page was produced by Steve Maddock -->
+<!-- indextitle="Steve Maddock" -->
+
+<!--#include file="head.html" -->
+
+<body id="home">
+
+  <!--#include file="header.html" -->
+
+  <main>
+
+    <div>
+      <!-- using div to avoid column break on this page - yuk!! But doesn't work in firefox -->
+
+      <figure id="portrait" class="left">
+        <img src="./images/steve_profile1.jpg" alt="portrait">
+      </figure>
+
+      <h1>Welcome</h1>
+
+      <p>I am a Senior Lecturer in the <a href="https://www.sheffield.ac.uk/dcs">Department of Computer Science</a> at
+        the <a href="https://www.sheffield.ac.uk/">University of Sheffield</a> and Head of the <a
+          href="https://www.sheffield.ac.uk/dcs/research/groups/visual-computing/home">Visual Computing
+          Research Group</a>. My research interests include facial modelling and animation, augmented, virtual and mixed
+        reality and their applications, and simulation and interfaces, in particular sketch-based interfaces.</p>
+
+    </div>
+
+  </main>
+
+  <!--#include file="footer.html" -->
+
+</body>
+
+</html>
