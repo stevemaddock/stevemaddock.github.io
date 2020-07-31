@@ -1,1 +1,419 @@
+/* ~~~Author: Steve Maddock~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~Date: 2 May 2019~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+/*
+colour scheme:
+rgb(186,227,242);
+rgb(133, 198, 223);
+rgb(91,171,201);
+rgb(58,143,176);
+rgb(30,120,154);
+
+change to black, white and three blues, plus a bright highlight colour?
+*/
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~general tags~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+:root {
+  --main_text : black;
+  --banner_text : black;
+  --a_text    : orange; /*rgb(30,120,154);*/
+  --highlight_text: rgb(58,143,176);
+  --my_background: rgba(133, 198, 223, 0.95);
+  --footer_background_one: rgb(58,143,176);
+  --footer_background_two: rgb(133, 198, 223);
+  --menu_text: rgb(204, 233, 243);
+  --menu_background: rgb(58,143,176);
+  --menu_background_rgba: rgba(58,143,176, 0.9);
+  --menu_highlight_text: white;
+  --footer_text: black;
+  --current_text: rgb(4, 51, 68);
+  --banner_height_mobile: 4em;
+  --banner_height_desktop: 4.7em;
+}
+
+html {
+  overflow-y: scroll;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}  /* "Sometimes, pages can be shorter than the browser view-port, and when you load a page on the same site that has longer content and uses a scrollbar, content can jump side to side. By forcing a scrollbar no matter the height of our content, we stop this small, but annoying issue." http://www.1stwebdesigner.com/snippets-html5-boilerplate/  */
+
+
+body {
+  width: 100%;
+  min-width: 320px;
+ /* max-width: 1800px; */
+  margin: 0;
+  margin-top: calc(var(--banner_height_mobile) + 0.5em);
+  padding: 0;
+  color: var(--banner_text);
+  background-color: white;
+  font: normal 100%/1.4 Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 130%;
+  color: var(--main_text);
+}
+
+h2 {
+  font-size: 110%;
+  color: var(--main_text);
+}
+
+p {
+  font-family: Georgia,"Times New Roman",Times,serif;
+}
+
+a { 
+  text-decoration: none; 
+  color: var(--a_text);
+  outline: 0;
+  transition: text-decoration 0.2s, color 0.2s, text-shadow 0.2s;
+}
+
+a:hover { 
+  color: var(--highlight_text);
+  text-shadow: 0px 0px 2px yellow;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~banner~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+header {  /* the banner */
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.9rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+                /* min-width cannot be set to anything useful */
+                /* body has a minimum width already */
+                /* if min-width is set to 320px  then h1 element slides off */
+                /* to the left when body min-width is reached */
+  width: 100%;  /* relative to viewport */
+  margin: 0;
+  padding: 0;
+  height: var(--banner_height_mobile);
+  background-color: var(--my_background);
+  /*background-image: url("../tpot1.jpg"); */
+  background: linear-gradient(to bottom right, var(--my_background), white);
+  /*border-bottom: 2px solid var(--footer_background_one); */
+}
+
+header>#logo {
+  /*background-color: transparent; /* blue; */
+  margin: auto 0;
+  padding: 0;
+  text-align: center;
+}
+
+header>#logo>h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: normal;
+  /*background-color: red; */
+  width: 100%;
+}
+
+header>#logo a  {
+  color: inherit;
+}
+
+header>#logo a:hover {
+  color: var(--highlight_text);  /* without this there is no highlight on hover */
+}
+
+nav {
+  /*height: 100%; */
+  width: 100%;
+  background-color: var(--menu_background_rgba);
+  text-align: center;
+  line-height: 1.7rem;
+}
+
+nav>ul {
+  margin: 0 5%;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: smaller;  /* added this to give a little more space between menu items */
+}
+
+nav>ul>li {
+  margin: 0;
+  padding: 0;
+}
+
+nav, nav>ul>li>a {
+  outline: 0;
+  color: var(--menu_text);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~navigation bar~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+body#home div#logo,
+body#research a#researchnav,
+body#teaching a#teachingnav,
+body#newsblog a#newsblognav,
+body#contact a#contactnav {
+  color: var(--current_text);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~main content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+main {
+  width: 90%;
+  margin: 0;
+  padding: 0 5% 1em 5%;
+  text-align: justify;
+  overflow: hidden;
+}
+
+main.smaller {
+  font-size: smaller;
+}
+
+.clearboth {
+clear: both;
+}
+
+main article {
+  
+  border-bottom: 1px solid rgb(230,230,230);
+  margin-bottom: 1rem;
+}
+
+main article h1 {
+  font-size: 110%;
+}
+
+main article .news-blog_date {
+  color: rgb(133, 198, 223);
+  font-size: small;
+  font-weight: normal;
+  text-align: right;
+}
+
+main h1, main h2 {
+  text-align: left;
+}
+
+main figure {
+  margin: 10px 3%;
+  width: 30%;
+  min-width: 100px;
+  max-width: 150px;
+}
+
+main figure.right {
+  margin-right: 0;
+  float: right;
+}
+
+main figure.left {
+  margin-left: 0;
+  float: left;
+}
+
+main figure.width80 {
+  width: 80%;
+  max-width: 80%;
+  margin: auto;
+}
+
+main figure.fullwidth {
+  width: 100%;
+  max-width: 100%;
+}
+
+main ul li.clearsides {
+  clear: both;
+}
+
+main figure img, main figure video {
+  width: 100%;
+}
+
+figcaption {
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+main ul, main ol {
+  padding-left: 20px;
+}
+
+main ul.submenu {
+  line-height: 1.5em;
+}
+
+main li {
+  text-align: left;
+}
+
+/* see the following for a responsive embedded iframe:
+https://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-responsive-design/ */
+
+.googlemap {
+  overflow: hidden;
+  padding-top: 75%;
+  position: relative;
+}
+
+.googlemap iframe {
+  z-index: 0;
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#publications main {
+  font-size: smaller;
+}
+
+.tweets {
+  width: 100%;
+}
+
+.nobullet {
+  list-style: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+footer {
+  clear: both;
+  width: 90%;
+  margin-top: 1em;
+  padding: 0 5% 1% 5%;
+  color: var(--footer_background_one);
+  border-top: 2px solid var(--footer_background_one);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: smaller;
+}
+
+footer .accessibility {
+  margin-top: 1rem;
+}
+
+footer .copyright {
+  font-size: 0.85rem;
+}
+
+footer .icons img {
+  padding: 0px 5px 0px 5px;
+}
+
+
+/* ~~~media queries~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/* ~~~break point: 600px~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media (min-width: 600px) {
+
+  body {
+    font-size: 90%;
+    margin-top: calc(var(--banner_height_desktop) + 2em);
+  }
+  
+  header {
+    height: var(--banner_height_desktop); 
+  }
+   
+  header>div#logo>h1 {
+    line-height: 100%; /* using this allows flex-box align-items: center to work  */
+    font-size: 1.3rem;
+  }
+  
+  nav {
+    line-height: 2.3rem;
+  }
+
+  nav>ul {
+    justify-content: center;
+    align-content: center;
+    font-size: 1.1rem;
+  }
+  
+  nav>ul>li {
+    padding: 0 1em;
+  }
+  
+  main {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    orphans: 3;
+    widows: 3;
+  }
+
+  main h1:first-of-type {
+    margin-top: 0;
+  }
+
+  main p.nopad {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  div.nobreak {
+    page-break-inside: avoid; /* should work for old versions of firefox? */
+    break-inside: avoid;  
+    -webkit-column-break-inside: avoid;
+    overflow: hidden; /* removes bullet points if used in an li, but needed to force a single column for a long list in a div */
+  }
+
+  main article, main div, main li, main .googlemap {
+    page-break-inside: avoid; /* should work for old versions of firefox? */
+    break-inside: avoid;  /* doesn't seem to work in firefox */
+    -webkit-column-break-inside: avoid;
+  }
+
+  footer .accessibility {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+} 
+
+}
+
+/* The following is based on https://www.creativebloq.com/rwd/expert-responsive-typography-tips-101517572 */
+
+@media screen and (min-width:1200px) {
+  body { font-size:105%; } /* Increase the font size */
+}
+@media screen and (min-width:1400px) {
+  html { padding:0 15%; } /* Reduce the container width */
+}
+@media screen and (min-width:1600px) {
+  body { font-size:105%; } /* Increase the font size */
+}
+@media screen and (min-width:1800px) {
+  html { padding:0 20%; } /* Reduce the container width */
+}
+
+/* ~~~end~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
