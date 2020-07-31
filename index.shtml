@@ -4,11 +4,11 @@
 <!-- This page was produced by Steve Maddock -->
 <!-- indextitle="Steve Maddock" -->
 
-<!--#include file="head.html" -->
+{% include head.html %}
 
 <body id="home">
 
-  <!--#include file="header.html" -->
+  {% include header.html %}
 
   <main>
 
