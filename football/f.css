@@ -1,0 +1,161 @@
+body {
+  font-family: serif;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+h1, h2 {
+  color: teal;
+  font-size: 1.3em;
+}
+
+p { 
+  color: black;
+}
+
+header {
+  border-bottom: 2px solid teal;
+  margin-bottom: 1em;
+}
+
+header h1 {
+  font-size: 1.6em;
+  text-align: center;
+}
+
+nav {
+  border-bottom: 2px solid teal;
+  margin-bottom: 1.5em;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+nav>ul>li {
+  padding: 0 20px;
+  border-right: 1px solid teal;
+}
+
+nav>ul>li:last-child {
+  border-right: none;
+}
+
+nav>ul>li>a {
+  text-decoration: none; 
+  outline: 0;
+}
+
+#jumptotop {
+  position: fixed;
+  padding: 1em;
+  right: 0;
+  bottom: 2%;
+  background-color: rgba(238,238,221,0.5);
+}
+
+main section {
+  border-bottom: 2px solid teal;
+  margin-bottom: 20px;
+}
+
+main section>h1 {
+  margin-top: 0;
+}
+
+main section article:first-child>h1 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+main section:last-child {
+  border-bottom: none;
+}
+
+main article {
+  border-bottom: 1px solid teal;
+  padding-bottom: 0.5em;
+}
+
+main article h1 {
+  color: black;
+}
+
+main article:last-child {
+  border-bottom: none;
+}
+
+main figure {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5em 0;
+}
+
+main div.figures {
+  width: 100%;
+  display: flex;
+}
+
+main div.figures_vertical {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main figure img {
+  width: 100%;
+}
+
+main figcaption {
+  text-align: center;
+}
+
+footer {
+  margin-top: 1em;
+  border-top: 2px solid teal;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+
+  body {
+    margin: 0 auto;
+    padding: 0 10%;
+  }
+
+}
+
+@media (min-width: 1000px) {
+
+  body {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  main section>div {
+    column-count: 2;
+  }
+
+  main section#matches_section, main section#extra_section {
+    column-count: 1;
+  }
+
+  main article {
+    break-inside: avoid;
+  }
+
+  main article:first-of-type {
+    break-inside: auto;
+  }
+
+}

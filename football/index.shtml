@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Football Tour</title>
+  <link rel="stylesheet" href="f.css">
+</head>
+
+<body>
+  <header>
+    <h1>Steve and Nick's Football Tour</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#thematches">Matches</a></li>
+      <li><a href="#extra_section">Extra</a></li>
+    </ul>
+  </nav>
+  <main>
+
+    <div>
+      <a href="#" id="jumptotop">Jump to top</a>
+    </div>
+
+    <section id="intro_section">
+
+      <h1 id="introduction">Introduction</h1>
+      <p>Steve and Nick are lifelong <a href="https://www.mancity.com/">Man City</a> fans, going to a few matches a
+        season. When it was announced that City had signed up for the Super League (in 2021), we were... disappointed.
+        We remain City fans. However, we decided that when we wanted to watch a match, we would also consider matches at
+        our regional clubs.</p>
+
+      <p>Our goal was to incorporate the elements we enjoyed when we went to see a City match. We would go by public
+        transport, find a good chippy nearest to the ground and, with a nod to the modern age, have a veg or vegan pie
+        at half time, as well as a pint.</p>
+
+      <p>Our <a href="#Hallam_start">first trip</a> was to Hallam FC, which is a 10 minute walk from where we live,
+        missing out the chippy and pie.</p>
+
+    </section>
+
+    <section id="matches_section">
+      <h1 id="thematches">The Matches</h1>
+      <p>In reverse chronological order:</p>
+      <ul>
+        <li><a href="#section_2023_24">2023/24</a></li>
+        <li><a href="#section_2022_23">2022/23</a></li>
+        <li><a href="#section_summer_22">Summer 2022</a></li>
+        <li><a href="#section_2021_22">2021/22</a></li>
+      </ul>
+    </section>
+
+    <section id="section_2023_24">
+      <h1>2023/24</h1>
+      <div>
+
+        <article>
+          <h1>Tue 26 Sep 2023, <a href="https://www.hallamfc.co.uk/" target="_blank">Hallam</a></h1>
+          <p>Hallam 6 - 3 Worsbrough Bridge Athletic<br>Northern Counties East Football League (NCEL) Premier Division</p>
+          <p>Walk to the ground. Half-time 3-0. Second half end to end.</p>
+          <div class="figures">
+            <figure>
+              <a href="images/hallam_sep2023_large.jpg" target="_blank"><img
+                  src="images/hallam_sep2023.jpg" alt="Corner"></a>
+              <figcaption>Attack</figcaption>
+            </figure>
+          </div>
+        </article>
+
+    </section>
+
+    <section id="section_2022_23">
+      <h1>2022/23</h1>
+      <div>
+
+        <article>
+          <h1>Tue 14 Mar 2023, Champions League</h1>
+          <p>Man City 7 - 0 RB Leipzig</p>
+          <p>Bus, train, tram. Fish and chips. Brilliant game.</p>
+          <div class="figures_vertical">
+            <figure>
+              <a href="images/bcity_leipzig_penalty_mar2023_large.jpg" target="_blank"><img
+                  src="images/city_leipzig_penalty_mar2023.jpg" alt="kick-off"></a>
+              <figcaption>Penalty...goal!!</figcaption>
+            </figure>
+            <figure>
+              <a href="images/bcity_leipzig_buildup_mar2023_large.jpg" target="_blank"><img
+                  src="images/city_leipzig_buildup_mar2023.jpg" alt="kick-off"></a>
+              <figcaption>Hoopla</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article>
+          <h1>Sat 11 Feb 2023, <a href="https://www.barnsleyfc.co.uk" target="_blank">Barnsley</a></h1>
+          <p>Barnsley 2 - 0 Cambridge United<br>Sky Bet League One</p>
+          <p>Bus, train, walk to the ground. Fish and chips at Langdale Fisheries - one fish good with crispy batter,
+            one less good, plenty of chips. Stood behind <a href="https://en.wikipedia.org/wiki/Ian_McMillan_(poet)">Ian
+              McMillan</a> (I recognise that voice) in the queue for a pie and a hot drink at half-time. Till playing
+            up, cash only.</p>
+          <div class="figures">
+            <figure>
+              <a href="images/barnsley_kickoff_feb2023_large.jpg" target="_blank"><img
+                  src="images/barnsley_kickoff_feb2023.jpg" alt="kick-off"></a>
+              <figcaption>Oakwell stadium old stand, kick-off</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article>
+          <h1>Sat 28 Jan 2023, <a href="https://www.hallamfc.co.uk/" target="_blank">Hallam</a></h1>
+          <p>Hallam 0 - 1 Penistone Church<br>Northern Counties East Football League (NCEL) Premier Division</p>
+          <p>Walk to the ground. Veggie pasty at half time not bad.</p>
+          <div class="figures">
+            <figure>
+              <a href="images/hallam_corner_jan2023_large.jpg" target="_blank"><img
+                  src="images/hallam_corner_jan2023.jpg" alt="Corner"></a>
+              <figcaption>Corner</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article>
+          <h1>Wed 7 Dec 2022, <a href="https://www.hallamfc.co.uk/" target="_blank">Hallam</a></h1>
+          <p>Hallam 2 - 3 Silsden AFC<br>Northern Counties East Football League (NCEL) Premier Division</p>
+          <p>Walk to the ground.</p>
+          <div class="figures">
+            <figure>
+              <a href="images/hallam_penalty_dec2022_large.jpg" target="_blank"><img
+                  src="images/hallam_penalty_dec2022.jpg" alt="Penalty goal"></a>
+              <figcaption>Penalty... Goal!!</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article>
+          <h1>Sat 30 July 2022, FA Community Shield</h1>
+          <p>Liverpool 3 - 1 Manchester City<br></p>
+          <p>Bus, train, then walk to the ground. Good fish and chips from Aylestone fish & chips, but very slow prep -
+            cooked to order!!</p>
+          <div class="figures">
+            <figure>
+              <a href="images/king_power_large.jpg" target="_blank"><img src="images/king_power.jpg"
+                  alt="Community Shield,  King Power stadium"></a>
+              <figcaption>Kick-off</figcaption>
+            </figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="section_summer_22">
+      <h1>Summer 2022</h1>
+      <div>
+        <article>
+          <h1>Sun 17 July 2022, UEFA Women's Euros</h1>
+          <p>Switzerland 1 - 4 Netherlands<br>Group stage, Group C</p>
+          <p>Bus, 'spoons, then walk to the ground.</p>
+          <div class="figures">
+            <figure>
+              <a href="images/womens_euros_bramhall_lane_large.jpg" target="_blank"><img
+                  src="images/womens_euros_bramhall_lane.jpg" alt="Womens Euros game at Bramhall lane"></a>
+              <figcaption>Corner</figcaption>
+            </figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="section_2021_22">
+      <h1>2021/22</h1>
+      <div>
+        <article>
+          <h1>Sat 23 Apr 2022, <a href="https://www.sufc.co.uk/" target="_blank">Sheffield United</a></h1>
+          <p>Sheffield United 1 - 0 Cardiff City<br>Championship</p>
+          <p>Bus then walk to the ground. Fish and chips from Man Friday.</p>
+          <div class="figures">
+            <figure>
+              <a href="images/sheffield_united_large.jpg" target="_blank"><img src="images/sheffield_united.jpg"
+                  alt="Sheffield United"></a>
+              <figcaption>Corner</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article>
+          <h1>Sat 2 Apr 2022, <a href="https://www.hallamfc.co.uk/" target="_blank">Hallam</a></h1>
+          <p>Hallam 2 - 1 Clipstone<br>Northern Counties East Football League (NCEL) Division 1</p>
+          <p>Champions!!</p>
+          <p>Walk to the ground.</p>
+          <div class="figures">
+            <figure>
+              <a href="images/hallam_champions_large.jpg" target="_blank"><img src="images/hallam_champions.jpg"
+                  alt="Hallam champions"></a>
+              <figcaption>Hallam champions</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article>
+          <h1>Sat 26 Feb 2022, <a href="https://www.swfc.co.uk/" target="_blank">Sheffield Wednesday</a></h1>
+          <p>Sheffield Wednesday 2 - 0 Charlton Athletic<br>Football League One</p>
+          <p>Lift part way. Walk to the ground - home of Sheffield Wednesday since 1899 [<a
+              href="https://www.stadiumguide.com/hillsborough/">The Stadium Guide</a>]. Fish and chips from Four Lanes
+            Fisheries. Arrived too late after 2pm, so long queue. Chips good, fish too much batter. Half-time: Bottoms
+            up beer dispensing system; Don't play with the magnet sealing the bottom of the glass!!</p>
+          <div class="figures_vertical">
+            <figure>
+              <a href="images/sheffield_wednesday_Hillsborough_large.jpg" target="_blank"><img
+                  src="images/sheffield_wednesday_Hillsborough.jpg" alt="Hillsborough"></a>
+              <figcaption>Hillsborough, Sheffield Wednesday</figcaption>
+            </figure>
+            <figure>
+              <a href="images/sheffield_wednesday_corner_large.jpg" target="_blank"><img
+                  src="images/sheffield_wednesday_corner.jpg" alt="Corner"></a>
+              <figcaption>Corner</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article>
+          <h1>Sat 5 Feb 2022, <a href="https://www.hallamfc.co.uk/" target="_blank">Hallam</a></h1>
+          <p>Hallam 4 - 5 Parkgate<br>Northern Counties East Football League (NCEL) Division 1</p>
+          <p>End to end action in atrocious conditions. How did Hallam lose it in the final minutes?</p>
+          <div class="figures">
+            <figure>
+              <a href="images/hallam_muddy_pitch_feb2022_large.jpg" target="_blank"><img
+                  src="images/hallam_muddy_pitch_feb2022.jpg" alt="Very muddy pitch"></a>
+              <figcaption>A very muddy pitch</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article>
+          <h1>Sat 22 Jan 2022, <a href="https://chesterfield-fc.co.uk" target="_blank">Chesterfield</a></h1>
+          <p>Chesterfield 0 - 0 Aldershot Town<br>National League</p>
+          <p>Bus and train. Walk to the ground. Good fish and chips from Chesters. Half-time: busy bar; found a man with
+            beer trolley.</p>
+          <div class="figures">
+            <figure>
+              <a href="images/chesterfield_Technique_Stadium_large.jpg" target="_blank"><img
+                  src="images/chesterfield_Technique_Stadium.jpg" alt="Technique Stadium"></a>
+              <figcaption>Technique Stadium, Chesterfield</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article>
+          <h1>Sat 8 Jan 2022, <a href="https://www.hallamfc.co.uk/" target="_blank">Hallam</a></h1>
+          <p>Hallam 4 - 0 FC Humber United<br>Northern Counties East Football League (NCEL) Division 1</p>
+          <p>Walk to the ground.</p>
+          <div class="figures">
+            <figure>
+              <a href="images/hallam_goal_jan2022_large.jpg" target="_blank"><img src="images/hallam_goal_jan2022.jpg"
+                  alt="Corner ball in for a goal"></a>
+              <figcaption>Corner ball in... Goal!!</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article>
+          <h1>Sat 20 Nov 2021, <a href="https://www.themillers.co.uk" target="_blank">Rotherham United</a></h1>
+          <p>Rotherham United 3 - 1 Cambridge United<br>Football League One</p>
+          <p>Bus and tram. Walk to the ground. Good fish and chips from Salt 'n' Vinegar in market area. Half-time: half
+            a vegetarian pie.</p>
+          <div class="figures_vertical">
+            <figure>
+              <a href="images/rotherham_AESSEAL_New_York_Stadium_large.jpg" target="_blank"><img
+                  src="images/rotherham_AESSEAL_New_York_Stadium.jpg" alt="AESSEAL New York Stadium"></a>
+              <figcaption>AESSEAL New York Stadium, Rotherham United</figcaption>
+            </figure>
+            <figure>
+              <a href="images/rotherham_goal_large.jpg" target="_blank"><img src="images/rotherham_goal.jpg"
+                  alt="Goal being scored"></a>
+              <figcaption>Goal!!</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article>
+          <h1 id="Hallam_start">Sat 31 August 2021, <a href="https://www.hallamfc.co.uk/" target="_blank">Hallam</a>
+          </h1>
+          <p>Hallam 4 - 0 Retford FC<br>Northern Counties East Football League (NCEL) Division 1</p>
+          <p>What better place to start: The world's oldest football ground. Our local and a 10 minute walk to the
+            ground. Good win early in the season.</p>
+          <div class="figures">
+            <figure>
+              <a href="images/hallam_penalty_aug2021_large.jpg" target="_blank"><img
+                  src="images/hallam_penalty_aug2021.jpg" alt="Penalty. Goal"></a>
+              <figcaption>Penalty.... Goal!!</figcaption>
+            </figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="extra_section">
+      <h1>Extra stuff</h1>
+      <ul>
+        <li><a href="https://twitter.com/FootyScran">@FootyScran</a> for half-time food offerings at football grounds
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; Steve and Nick, 2023</p>
+  </footer>
+</body>
+
+</html>
