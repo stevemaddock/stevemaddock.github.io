@@ -97,6 +97,10 @@ main figure {
   padding: 0.5em 0;
 }
 
+main div.avoidbreak {
+  break-inside: avoid;
+}
+
 main div.figures {
   width: 100%;
   display: flex;
