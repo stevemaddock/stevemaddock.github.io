@@ -99,6 +99,7 @@ main figure {
 
 main div.avoidbreak {
   break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 main div.figures {
