@@ -113,6 +113,12 @@ main div.figures_vertical {
   flex-direction: column;
 }
 
+main div.figures_sidebyside {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
 main figure img {
   width: 100%;
 }
