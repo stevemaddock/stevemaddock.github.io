@@ -120,9 +120,9 @@ main div.figures_sidebyside {
 }
 
 main figure.space_and_border {
-   padding: 0.5em;
+   padding: auto 0.5em;
    border: 1px solid teal;
-   margin: auto 0.5em;
+   margin: 0.3em;
 }
 
 main figure img {
