@@ -123,6 +123,9 @@ main figure.space_and_border {
   padding: 0.5em;
   border: 1px solid teal;
   margin: 0.5em;
+}
+
+main figure.space_and_border figcaption {
   position: absolute;
   bottom: 0;
   left: 0;
