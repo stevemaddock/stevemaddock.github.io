@@ -119,6 +119,12 @@ main div.figures_sidebyside {
   flex-direction: row;
 }
 
+main figure.space_and_border {
+   padding: 0.5em;
+   border: 1px solid teal;
+   margin: 0.5em;
+}
+
 main figure img {
   width: 100%;
 }
